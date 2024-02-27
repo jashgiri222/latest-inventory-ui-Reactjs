@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.giriheader{
+  background-color:  #80ced6;
+}
+.align {
+  text-align: center;
+}
+
+.textBorder {
+  text-shadow: 0 0 1px #FF0000, 0 0 1px #0000FF;
+}
+table{
+  border: 1px solid black;
+  width: 100%;
+  height: 0px;
+ 
+  
+}
