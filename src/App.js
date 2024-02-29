@@ -7,6 +7,7 @@ import Home from './Components/Home';
 import Header from './Components/Header';
 import Logout from './Components/Logout';
 import Additems from './Components/Additems';
+import UpdateItem from './Components/UpdateItem';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
           <Route path='/header'  element={<Header/>}></Route>
           <Route path='/logout'  element={<Logout/>}></Route>
           <Route path='/additem'  element={<Additems/>}></Route>
+          <Route path='/update'  element={<UpdateItem/>}></Route>
+          
         </Routes>
       </BrowserRouter>
       

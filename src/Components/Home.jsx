@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import { deleteItemByItemId, getAllItems } from "./Apiservice";
+import { deleteItemByItemId, getAllItems, setItem } from "./Apiservice";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -46,6 +46,13 @@ function Home() {
     window.location.reload(false);
   }
 
+  function updateItem(id){
+   console.log("Update function called ",items);
+    setItem(id)
+    navigate('/update')
+
+  }
+
   return (
     <div className="container" style={{ backgroundColor: "blanchedalmond" }}>
       <Header />
@@ -85,7 +92,10 @@ function Home() {
                   {" "}
                   Add
                 </button>
-                <button className="btn btn-info" style={{ marginLeft: "10px" }}>
+                <button className="btn btn-info" style={{ marginLeft: "10px" }}
+                
+                onClick={()=>updateItem(data.itemId)}
+                >
                   {" "}
                   Update
                 </button>
