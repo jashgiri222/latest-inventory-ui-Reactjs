@@ -39,7 +39,7 @@ export default function Additems() {
     console.log("Calling Api in component");
     addItems(inputData).then((resp) => {
       setStatus(resp.status);
-      alert("Item Added Successfully")
+      alert("Item Added Successfully!!")
       console.log("Response in Component ", resp.status);
       navigate('/home')
     });
@@ -52,13 +52,13 @@ export default function Additems() {
       <div className="App">
         <h2 style={{ color: "Highlight" }}>Add Item </h2>
       </div>
-      <div className="formbg">
+      <div className="item">
         <form
           style={{ textAlign: "center" }}
           id="add-item"
           onSubmit={submitForm}
         >
-          <label>Item Code : </label>
+          <label >Item Code :</label>
           <input
             type="text"
             name="itemCode"

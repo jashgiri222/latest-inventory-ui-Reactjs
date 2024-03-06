@@ -69,7 +69,7 @@ export default function UpdateItem() {
       <div className="App">
         <h2 style={{ color: "Highlight" }}>Update Item </h2>
       </div>
-      <div className="formbg">
+      <div className="item">
         <form
           style={{ textAlign: "center" }}
           id="add-item"

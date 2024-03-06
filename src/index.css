@@ -11,12 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
- .formbg{
-padding: 25px;
-background-repeat: no-repeat;
-background-color:antiquewhite;
+.formbg1{
+  background-image: url('C:\Users\jasgiri\Desktop\Inventory-Application\inventoryapp\public\login.jpg');
+  background-size: cover;
+  background-position: center;
+
 }
 
   .btnspace {
     margin-right: 10px;
 }
+
+.formbg {
+  background-image: url('C:\Users\jasgiri\Desktop\Inventory-Application\inventoryapp\public\login.jpg');
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 400px;
+  /* Add any other background properties here */
+}
+
+

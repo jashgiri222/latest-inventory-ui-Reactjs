@@ -6,7 +6,7 @@ export default function Logout() {
   return (
     <>
     <div className='App'>
-    <h2 style={{color:"Highlight"}}>Successfully Logout</h2>
+    <h4 style={{color:"Highlight"}}>Logged out</h4>
     <button className='btn btn-info'><Link Link to="/login" >Login</Link></button>
     </div>
 

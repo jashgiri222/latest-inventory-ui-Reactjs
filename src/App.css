@@ -54,3 +54,13 @@ table{
  
   
 }
+
+
+.item {
+  background-image: url('c:\Users\jasgiri\Documents\My B.tech Dacuments\item.jpg');
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 400px;
+  /* Add any other background properties here */
+}

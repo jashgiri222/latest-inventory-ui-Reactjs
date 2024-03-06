@@ -8,6 +8,8 @@ import Header from './Components/Header';
 import Logout from './Components/Logout';
 import Additems from './Components/Additems';
 import UpdateItem from './Components/UpdateItem';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (

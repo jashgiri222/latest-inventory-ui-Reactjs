@@ -12,7 +12,7 @@ function Signup() {
     dob: "",
   };
   const [inputData, setInputData] = useState(formData);
-  const [status, setStatus] = useState("");
+  //const [status, setStatus] = useState("");
   const navigate = useNavigate();
 
   function cancel(e) {
@@ -40,7 +40,7 @@ function Signup() {
       console.log("submit input Data", inputData);
       console.log("Calling Api in component");
       registerUser(inputData).then((resp) => {
-        setStatus(resp.status);
+        //setStatus(resp.status);
         console.log("Response in Component ", resp.status);
         alert("Success!!");
         navigate("/login");
@@ -51,7 +51,7 @@ function Signup() {
   return (
     <>
       <div className="App">
-        <h2 style={{ color: "Highlight" }}>New User Enrollment</h2>
+        <h2 style={{ color: "green" }}>New User Enrollment</h2>
       </div>
       <div className="formbg">
         <form
@@ -104,9 +104,9 @@ function Signup() {
           ></input>
           <br></br>
           <br></br>
-          <button className="btn btn-info">Add User</button>
+          <button className="btn btn-success">Add User</button>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button className="btn btn-info" onClick={cancel}>
+          <button className="btn btn-success" onClick={cancel}>
             Cancel
           </button>
         </form>
