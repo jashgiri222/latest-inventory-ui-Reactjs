@@ -57,10 +57,12 @@ export default function UpdateItem() {
       })
       .then((resp) => {
         console.log("Item updated successfully:", resp.data);
+        alert("Success")
         navigate("/home"); // Navigate back to home page after successful update
       })
       .catch((error) => {
         console.error("Error updating item:", error);
+        alert("Failed!!")
         // Handle error appropriately (e.g., show error message to user)
       });
   }
@@ -75,7 +77,7 @@ export default function UpdateItem() {
           id="add-item"
           onSubmit={submitForm}
         >
-          <label>Item Code : </label>
+          <label><strong>Item Code :</strong> </label>
           <input
             type="text"
             name="itemCode"
@@ -84,7 +86,7 @@ export default function UpdateItem() {
           ></input>
           <br></br>
           <br></br>
-          <label>Item Name : </label>
+          <label><strong>Item Name :</strong> </label>
           <input
             type="text"
             name="itemName"
@@ -93,7 +95,7 @@ export default function UpdateItem() {
           ></input>
           <br></br>
           <br></br>
-          <label>Category : </label>
+          <label><strong>Category :</strong> </label>
           <input
             type="text"
             name="category"
@@ -102,7 +104,7 @@ export default function UpdateItem() {
           ></input>
           <br></br>
           <br></br>
-          <label>Quantity : </label>
+          <label><strong>Quantity :</strong> </label>
           <input
             type="text"
             name="quantity"
@@ -111,7 +113,7 @@ export default function UpdateItem() {
           ></input>
           <br></br>
           <br></br>
-          <label>Status : </label>
+          <label><strong>Status :</strong> </label>
           <input
             type="text"
             name="status"
@@ -120,7 +122,7 @@ export default function UpdateItem() {
           ></input>
           <br></br>
           <br></br>
-          <button className="btn btn-info">Add </button>
+          <button className="btn btn-info">Update</button>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           {/* <button className="btn btn-info" onClick={cancel}>
             Cancel

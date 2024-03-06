@@ -58,7 +58,7 @@ export default function Additems() {
           id="add-item"
           onSubmit={submitForm}
         >
-          <label >Item Code :</label>
+          <label ><strong>Item Code :</strong></label>
           <input
             type="text"
             name="itemCode"
@@ -67,7 +67,7 @@ export default function Additems() {
           ></input>
           <br></br>
           <br></br>
-          <label>Item Name : </label>
+          <label><strong>Item Name :</strong> </label>
           <input
             type="text"
             name="itemName"
@@ -76,7 +76,7 @@ export default function Additems() {
           ></input>
           <br></br>
           <br></br>
-          <label>Category : </label>
+          <label><strong>Category :</strong> </label>
           <input
             type="text"
             name="category"
@@ -85,7 +85,7 @@ export default function Additems() {
           ></input>
           <br></br>
           <br></br>
-          <label>Quantity : </label>
+          <label><strong>Quantity :</strong> </label>
           <input
             type="text"
             name="quantity"
@@ -94,7 +94,7 @@ export default function Additems() {
           ></input>
           <br></br>
           <br></br>
-          <label>Status : </label>
+          <label><strong>Status :</strong> </label>
           <input
             type="text"
             name="status"
