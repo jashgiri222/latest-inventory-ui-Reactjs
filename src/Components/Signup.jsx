@@ -59,7 +59,7 @@ function Signup() {
           id="register-form"
           onSubmit={submitForm}
         >
-          <label>First Name :</label>
+          <label><strong>First Name :</strong></label>
           <input
             type="text"
             name="firstName"
@@ -68,7 +68,7 @@ function Signup() {
           ></input>
           <br></br>
           <br></br>
-          <label>Last Name :</label>
+          <label><strong>Last Name :</strong></label>
           <input
             type="text"
             name="lastName"
@@ -77,7 +77,7 @@ function Signup() {
           ></input>
           <br></br>
           <br></br>
-          <label>User Name :</label>
+          <label><strong>User Name :</strong></label>
           <input
             type="text"
             name="userName"
@@ -86,7 +86,7 @@ function Signup() {
           ></input>
           <br></br>
           <br></br>
-          <label>Password :</label>
+          <label><strong>Password :</strong></label>
           <input
             type="password"
             name="password"
@@ -95,7 +95,7 @@ function Signup() {
           ></input>
           <br></br>
           <br></br>
-          <label>DOB :</label>
+          <label><strong>DOB :</strong></label>
           <input
             type="date"
             name="dob"
@@ -107,7 +107,7 @@ function Signup() {
           <button className="btn btn-success">Add User</button>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <button className="btn btn-success" onClick={cancel}>
-            Cancel
+            Reset
           </button>
         </form>
       </div>

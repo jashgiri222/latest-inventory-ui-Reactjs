@@ -42,7 +42,7 @@ function Login() {
       </div>
       <div className="formbg1">
         <form style={{ textAlign: "center" }} onSubmit={submitLogin}>
-          <label>User Name :</label>
+          <label><strong>User Name :</strong></label>
           <input
             type="text"
             name="userName"
@@ -51,7 +51,7 @@ function Login() {
           ></input>
           <br></br>
           <br></br>
-          <label>Password :</label>
+          <label><strong>Password :</strong></label>
           <input style={{color:"Highlight"}}
             type="password"
             name="password"
